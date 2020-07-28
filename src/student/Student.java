@@ -31,12 +31,15 @@ public class Student {
         
     }
     
-    public Student( String customFirstName, String customLastName, int customYearOfBirth){
+    public Student( String customFirstName, String customLastName, int customYearOfBirth,Course course,Computer computer){
     
         this.firstName = customFirstName;
         this.lastName = customLastName;
         this.yearOfBirth = customYearOfBirth;
+        this.computer = computer;
+        this.course = course;
     }
+    
     
     
     
