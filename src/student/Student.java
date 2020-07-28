@@ -5,6 +5,10 @@
  */
 package student;
 
+import computer.Computer;
+import course.Course;
+
+
 /**
  *
  * @author Home
@@ -14,12 +18,16 @@ public class Student {
     private String firstName ;
     private String lastName ;
     private int yearOfBirth ;
+    private Course course;
+    private Computer computer;
 
     public Student() {
         
         this.firstName = "undefined";
         this.lastName = "undefined";
         this.yearOfBirth = 0;
+        this.course = new Course();
+        this.computer = new Computer();
         
     }
     
@@ -64,5 +72,8 @@ public class Student {
         
     
     }
+
+    
+    
     
 }
